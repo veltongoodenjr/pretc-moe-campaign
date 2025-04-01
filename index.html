@@ -245,4 +245,83 @@
         <div class="card">
           <h3>Instagram – “Your Story, Your Strength”</h3>
           <p><strong>Type:</strong> Reels + Carousels</p>
-          <p>Student-led videos sharing how dem overcome bullying. Ends with captions like “Nuh worry y
+          <p>Student-led videos sharing how dem overcome bullying. Ends with captions like “Nuh worry yuhself, help deh bout.”</p>
+          <p><strong>Visual Style:</strong> School settings, authentic talk, bold colours. “Likkle but tallawah” spirit throughout.</p>
+        </div>
+        <div class="card">
+          <h3>TikTok – #SpeakUpChallenge</h3>
+          <p><strong>Type:</strong> Short-form video</p>
+          <p>Students show creative ways to stop bullying or support a friend. Launched with Jamaican youth influencers.</p>
+          <p><strong>Visual Style:</strong> Fast-paced, bold captions, music-driven. Inspired by <a href="https://datareportal.com/reports/digital-2024-jamaica" target="_blank">local TikTok usage</a>.</p>
+        </div>
+        <div class="card">
+          <h3>Facebook – Parent & Teacher Toolkit</h3>
+          <p><strong>Type:</strong> Infographics + Animations</p>
+          <p>Explains how to identify signs of bullying and respond supportively. Downloadable PDFs included.</p>
+          <p><strong>Visual Style:</strong> Calming palette, easy-to-read fonts, family-friendly icons.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section3">
+      <h2>Part 3: Digital Marketing Amplifier</h2>
+      <img src="https://imgur.com/AWKUWDz.png" alt="Challenge Graphic" class="img-rounded">
+      <p><strong>Initiative:</strong> #OneLoveOneHeart Challenge Week</p>
+      <p>
+        A high-energy campaign week where schools post videos showing unity against bullying. Skits, chants or dances are welcomed, all tied to the theme: “One love, one heart – one voice against bullying.”
+      </p>
+      <p>
+        The challenge launches with well-known influencers <a href="https://www.instagram.com/daindraharrison" target="_blank">Daindra Harrison</a> and <a href="https://www.instagram.com/iamjuliemango" target="_blank">Juliet Angelique Bodley (Julie Mango)</a>, using their signature humour to start each skit light and relatable — but mid-way, the energy shifts to show a serious, real-world bullying moment.
+      </p>
+      <p>
+        Each video ends with a formal sit-down on camera, where the influencer drops character to speak honestly: “Jokes aside, bullying serious. We affi talk 'bout it.” This blend of entertainment and authenticity makes the message stick.
+      </p>
+      <p>
+        Participating schools can win branded gear or wellness workshops. The challenge taps into the culture of dance, storytelling and humour — but grounds it in real-life experiences, making it impactful and memorable for students islandwide.
+      </p>
+    </div>
+
+    <div class="section references" id="section4">
+      <h3>References</h3>
+      <ul>
+        <li>Jamaica Gleaner. (2024). <a href="https://jamaica-gleaner.com/article/esponsored/20241119/high-rate-bullying-leaves-jamaican-students-fear" target="_blank">High Rate Bullying Leaves Jamaican Students in Fear</a>.</li>
+        <li>UNICEF Jamaica. (Press Release). <a href="https://www.unicef.org/jamaica/press-releases/half-worlds-teens-experience-peer-violence-and-around-school-unicef" target="_blank">Half of the World's Teens Experience Peer Violence and Around School</a>.</li>
+        <li>Jamaica Observer. (2023). <a href="https://www.jamaicaobserver.com/2023/10/06/bullying-the-heartbeat-of-violence-20231018-2304-447244/" target="_blank">Bullying: The Heartbeat of Violence</a>.</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Ministry of Education and Youth • Digital Strategy by Velton Gooden Jr • #StandUpFiWiYouth
+    </div>
+  </div>
+
+  <button id="scrollToTopBtn">&#8679;</button>
+
+  <script>
+    // Scroll-to-top button and section reveal on scroll
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    const sections = document.querySelectorAll('.section');
+    
+    window.addEventListener('scroll', () => {
+      // Show/hide scroll-to-top button
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+      
+      // Reveal sections when they come into view
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight - 100) {
+          section.classList.add('visible');
+        }
+      });
+    });
+    
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
